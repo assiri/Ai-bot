@@ -20,8 +20,9 @@ def chatbot(input):
         return reply
 
 
-inputs = gr.inputs.Textbox(lines=7, label="Chat with AI")
-outputs = gr.outputs.Textbox(label="Reply")
+
+inputs = gr.Textbox(lines=7, label="Chat with AI")
+outputs = gr.Textbox(label="Reply")
 
 gr.Interface(
     fn=chatbot,
